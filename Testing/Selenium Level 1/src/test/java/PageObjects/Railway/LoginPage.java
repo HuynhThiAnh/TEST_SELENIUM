@@ -9,7 +9,7 @@ public class LoginPage extends GeneralPage {
     private final By _txtPassword = By.xpath("//input[@id='password']");
     private final By _btnLogin = By.xpath("//input[@value='login']");
     private final By _IblLoginErrorMsg = By.xpath("//p[@class='message error LoginForm']");
-
+    private final By _lblErrorMsg = By.xpath("//*[@id='content']");
     //Elements
     public WebElement getTxtUsername()
     {
@@ -26,6 +26,9 @@ public class LoginPage extends GeneralPage {
     public WebElement getLblLoginErrorMsg()
     {
         return Constant.WEBDRIVER.findElement(_IblLoginErrorMsg);
+    }
+    public WebElement getLbErrorMsg(){
+        return Constant.WEBDRIVER.findElement(_lblErrorMsg);
     }
 
     //methods

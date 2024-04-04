@@ -1,3 +1,4 @@
+
 package PageObjects.Railway;
 
 import Common.Constant.Constant;
@@ -10,7 +11,7 @@ public class ChangePasswordPage extends GeneralPage {
     private final By _txtNewPassword = By.xpath("//input[@id='newPassword']");
     private final By _txtConfirmPassword = By.xpath("//input[@id='confirmPassword']");
     private final By _btnChangePassword = By.xpath("//input[@value='Change Password']");
-    private final By _lblChangePasswordErrorMsg = By.xpath("//*[@id=\"ChangePW\"]/fieldset/p[1]");
+    private final By _lblChangePasswordErrorMsg = By.xpath("//*[@id='ChangePW']/fieldset/p[1]");
 
 
     //Elements
